@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips - SOE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background:linear-gradient(90deg, rgba(34,193,195,1) 0%, rgb(91, 255, 99) 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .points {
+            font-size: 24px;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        .tips-list {
+            text-align: left;
+        }
+        .tip {
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: #555;
+        }
+        .back-btn {
+            margin-top: 20px;
+            padding: 12px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .back-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Your Daily Tips</h1>
+        <p class="points">Your Points: <span id="points">0</span></p>
+        <div class="tips-list">
+            <div class="tip">🌿 Tip 1: Turn off lights when not in use.</div>
+            <div class="tip">🚰 Tip 2: Fix leaky faucets to save water.</div>
+            <div class="tip">🚴 Tip 3: Use bicycles or public transport to reduce emissions.</div>
+            <div class="tip">🌍 Tip 4: Reduce, reuse, and recycle wherever possible.</div>
+        </div>
+        <a class="back-btn" href="/">Back to Home</a>
+    </div>
+
+    <script>
+        const userPoints = 150; 
+        document.getElementById('points').textContent = userPoints;
+    </script>
+
+</body>
+</html>
